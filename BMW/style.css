@@ -11,7 +11,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     height: 700px;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     margin-left: 40px;
     margin-right: 40px;
 }
@@ -47,6 +47,7 @@ ul{
     display: flex;
     align-items: center;
     padding: 10px;
+    font-weight: bold;
 }
 
 .nav__ul--icons{
@@ -73,8 +74,9 @@ li img{
     position: absolute;
     top: 53%;
     left: 6%;
+    color: rgb(255, 255, 255);
 }
-.header__bottom--button{
+button{
     background-color: #1c69d4;
     color: white;
     cursor: pointer;
@@ -82,4 +84,23 @@ li img{
     margin-top: 15px;
     margin-left: 20px;
     font-size: 105%;
+    border-width: 0;
+}
+
+.primalContent{
+    margin: 120px;
+    font-weight: bold;
+}
+.primalContent__nav ul{
+    display: flex;
+    justify-content: space-around;
+    font-size: 120%;
+}
+
+.primalContent__elements{
+
+}
+.primalContent__elements--1row{
+    display: flex;
+    justify-content: space-around;
 }

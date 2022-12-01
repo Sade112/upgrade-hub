@@ -12,8 +12,8 @@ header{
     background-size: cover;
     height: 700px;
     color: rgb(0, 0, 0);
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
 
@@ -22,16 +22,15 @@ nav{
     display: flex;
     justify-content: space-between;
     height: 80px;
-    padding: 20px;
 }
 nav::after{
     content: "";
     background-color: rgb(255, 255, 255);
-    width: 87%;
+    width: 100%;
     height: 1px;
     position: absolute;
-    top: 12%;
-    left: 80px;
+    top: 10%;
+    left: 0px;
 }
 
 
@@ -42,6 +41,7 @@ ul{
 
 .nav__ul--links{
     justify-content: flex-start;
+    margin-top: 25px;
 }
 .nav__ul--links > li{
     display: flex;
@@ -52,6 +52,8 @@ ul{
 
 .nav__ul--icons{
     justify-content: flex-end;
+    margin-top: 25px;
+    padding-right: 2rem;
 }
 .nav__ul--icons > li{
     display: flex;
@@ -72,8 +74,8 @@ li img{
 
 .header__bottom{
     position: absolute;
-    top: 53%;
-    left: 6%;
+    top: 50%;
+    left: 8%;
     color: rgb(255, 255, 255);
 }
 button{
@@ -97,10 +99,47 @@ button{
     font-size: 120%;
 }
 
-.primalContent__elements{
 
+
+
+/* CUERPO PRINCIPAL DE LA WEB ------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.primalContent__elements{
 }
+
+/* CATALOGO COCHES */
 .primalContent__elements--1row{
     display: flex;
     justify-content: space-around;
+}
+.primalContent__elements--2row{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+/* SECCIÓN NOTICIAS */
+.primalContent__elements--news{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+.primalContent__elements--news--card1{
+    display: flex;
+    
+}
+.primalContent__elements--news--card--img{
+
+}
+.primalContent__elements--news--card---h1{
+    position: absolute;
+    margin: 20px;
+}
+.primalContent__elements--news--card---h1 h1{
+    color: aliceblue;
+}
+.primalContent__elements--news--card--button{
+    position: absolute;
+    margin-top: 9.5%;
+    margin-left: 2%;
 }

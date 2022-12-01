@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 <body>
 
@@ -39,75 +40,169 @@
 
     <div class="primalContent">
         <div class="primalContent__nav">
-            <ul>
-                <li>Cabrio</li>
-                <li>Berlina</li>
-                <li>Compacto</li>
-                <li>Coupé</li>
-                <li>BMW i</li>
-                <li>Todocamino</li>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Cabrio</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Berlina</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Compacto</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" disabled>Coupé</button>
+                </li>
             </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                    <div class="primalContent__elements">
+                        <div class="primalContent__elements--1row">
+                            <div class="primalContent__elements--1row--1car">
+                                <div class="primalContent__elements--1row--1car--img">
+                                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kOHUtWPfbYfXGPb10tLhu1XzWVo7puMLWFmdkAj5DOP7tFkZ8XgY1nTNIowJ4HO3zkyXq%25sGM8snpq6v6ODubLz2aKqfksQjmB2fJj5DOPMEagd%25kcWExHWpbl8FO2k3Hy2o242yATQBrXpFkaWlZ24riInREscpF4HvmJx0KiIFJG7IXABHvIT9ahyO2JGvloRsFgpT9GsLxSQUilo90yW1vbHsLoACeN7hJ0yLOEjhOqTACygN6dumlOECUkwQt7sgNEbn%25rBDS6jQ%25eT62Ydw6ZujlUptQ%25wc36PLifZu%25KXsnDHSc3uBr0CYJdKX324AIGTQBrXpFOnYlZ24riIgqYscpF4HvUmo0KiIFJG7kLABHvIT9a1gO2JGvloqDVgpT9GsLmdbUilo90yWEHbHsLoAC1fRhJ0yLOExylqTACygNWagmlOECUkyih7sgNEbn%25hL10UkNh5utTVAfke3x8NHC4wnoDyeLAEmrqIbgBj" alt="">
+                                </div>
+                                <div class="primalContent__elements--1row--1car--text">
+                                    <h2>Nuevo BMW iX</h2>
+                                    <h4>ELÉCTRICO</h4>
+                                    <h5>Desde 87.150€</h5>
+                                </div>
+                                <div class="primalContent__elements--1row--1car--button">
+                                    <button>Reservar</button>
+                                </div>
+                            </div>
+                            <div class="primalContent__elements--1row--2car">
+                                <div class="primalContent__elements--1row--1car--img">
+                                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kOHUtWPfbYfQJsd10tLhu1XzWVo7puMLWFmdkAj5DOPcQV%25Z8XgY1nTNIowJ4HO3zkyXq%25sGM8snGhMQSk%2508Xc9Vo74g37WNF1VgxNJ0%25ls2oub5imC2yRCzXeTt%25ViPRKVZVYVs4Wh1DMztIAzeqVYDafM3ajmztYRSDXz67aftxdYrfw1RSfWQthj%25VxdSeZ4EYuzWQdjcFs73aeZQ6KIoqXRjcZwBvL4rx6Kc%252Gyn4WwBKupUIaFe%252B3ibMUIjup2XH5qMv63iprJqYSGwXHi4TnYu9%25rJHFl5Ifou4TJIs8vWL3FlTv0P6PyXIslGAtnUCrv0s9OfQ6E4GA0ogSZhNF9OALUdcnkIogOybQCunvLUgChZq15GybUEqcmO89ChbNmKwYPoEqhk7BDDMLNmqn12cjDyk7m5VnJbYCn178zBGPtE5V1Pa29yfN8zVMRpoMSkPazDxTY7dnMRaYWl2OQ5DxRtesCZZ8YWxfjtzzcPteWS6fgoKMfjedwSkYBDS6jQ%25gEk2Ydw6ZuUNCptQ%25wc3bpjifZu%25KXsnDHSc3uBr0FvJdKX324AIxTQBrXpFOnNlZ24riIg6gscpF4Hv5tX0KiIFJGbhTABHvIT9hqxO2JGvloMjegpT9GsLx0bUilo90yYw0bHsLoACR1%25hJ0yLOEozjqTACygNSd4mlOECUkeE87sYEx%25anCpLXjNYPox9syh3b4gAcW" alt="">
+                                </div>
+                                <div class="primalContent__elements--1row--1car--text">
+                                    <h2>BMW X5</h2>
+                                    <h4>GASOLINA - DIÉSEL</h4>
+                                    <h5>Desde 74.700€</h5>
+                                </div>
+                                <div class="primalContent__elements--1row--1car--button">
+                                    <button>Reservar</button>
+                                </div>
+                            </div>
+                            <div class="primalContent__elements--1row--3car">
+                                <div class="primalContent__elements--1row--1car--img">
+                                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kOHUtWPfbYf6JZg10tLhu1XzWVo7puMLWFmdkAj5DOP5tpFZ8XgY1nTNIowJ4HO3zkyXq%25sGM8snGhMQSk%2508Xc9Vo74gtZLNF1VgxNJ0%25ls2oub5imC2yRCzXeTt%25ViPRKVZVYXw9Wh1DMztr9JeqVYDaf4RLjmztYRSG3O67aftxd9WMw1RSfWQoeu%25VxdSeZLdYuzWQdjcyUR3aeZQ6KChrXRjcZwBETSrx6Kc%252Nl74WwBKupksaFe%252B3iKovIjup2XHBpxv63iprJ2TWGwXHi4TCze9%25rJHFlERLou4TJIsFfpL3FlTv0ISUyXIslGAvdCCrv0s9OGJJE4GA0og9QNNF9OALUxWpkIogOybWu0nvLUgChe2B5GybUEqjpI89ChbNm6iCPoEqhk7ZSLMLNmqn1cI9Dyk7m5VpQ%25YCn178zieptE5V1PaH2kfN8zVMRJpuSkPazDxTA6dnMRaYWz2YQ5DxRteapDZ8YWxfjRiscPteWS6xHeKMfjedwWJOBDS6jQ%25e5W2Ydw6Zuj8KptQ%25wc3lscifZu%25KXs0BHSc3uBr0AtJdKX324AOQTQBrXpFOgVlZ24riIgkSscpF4HvUnO0KiIFJGbdkABHvIT9hMdO2JGvloqVdgpT9GsLmzbUilo90yWc0bHsLoACRN4hJPLzj1EoKG%25xyPnvzIJ9gwO30lda" alt="">
+                                </div>
+                                <div class="primalContent__elements--1row--1car--text">
+                                    <h2>Nuevo BMW i4 M50</h2>
+                                    <h4>ELÉCTRICO</h4>
+                                    <h5>Desde 76.500€</h5>
+                                </div>
+                                <div class="primalContent__elements--1row--1car--button">
+                                    <button>Reservar</button>
+                                </div>
+                            </div>
+                            <div class="primalContent__elements--1row--4car">
+                                <div class="primalContent__elements--1row--1car--img">
+                                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kOHUtWPfbYf6JDc10tLhu1XzWVo7puMLWFmdkAj5DOPMtEmZ8XgY1nTNIowJ4HO3zkyXq%25sGM8snGhMQSk%2508Xc9Vo74giUnNF1VgxNJ0%25ls2oub5imC2yRCzXeTt%25ViPRKVZVYV9aWh1DMztIVReqVYDafaiojmztYRSJwL67aftxdTC1w1RSfWQlER%25VxdSeZG4NuzWQdjc9NO3aeZQ6KownXRjcZwBL6drx6Kc%252y184WwBKupCVRFe%252B3inXZIjup2XH5rzv63iprJ849GwXHi4TPHB9%25rJHFlMJOou4TJIsDRXL3FlTv0YWUyXIslGAteECrv0s9Ofm6E4GA0ogS73NF9OALUdMRkIogOybQk0nvLUgChZSR5GybUEqgYP89ChbNmUhIPoEqhk7bXHMLNmqn1hdnDyk7m5VqQkYCn178zmZ1tE5V1Pa7oDfN8zVMRcsmSkPazDxK9QdnMRaYWB2YQ5DxRte2pAZ8YWxfjpICcPteWS6i9vKMfjedwHsNBDS6jQ%25J0p2Ydw6ZuQTPptQ%25wc3ZmeifZu%25KXcmHHSc3uBrKMQJdo3Om04uMwVbXov6Ojd%25p12aKZng" alt="">
+                                </div>
+                                <div class="primalContent__elements--1row--1car--text">
+                                    <h2>Nuevo BMW X4</h2>
+                                    <h4>GASOLINA - DIÉSEL</h4>
+                                    <h5>Desde 58.400€</h5>
+                                </div>
+                                <div class="primalContent__elements--1row--1car--button">
+                                    <button>Reservar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="primalContent__elements--2row">
+                            <div class="primalContent__elements--1row--1car">
+                                <div class="primalContent__elements--1row--1car--img">
+                                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kOHUtWPfbYfXGPb10tLhu1XzWVo7puMLWFmdkAj5DOP7tFkZ8XgY1nTNIowJ4HO3zkyXq%25sGM8snpq6v6ODubLz2aKqfksQjmB2fJj5DOPMEagd%25kcWExHWpbl8FO2k3Hy2o242yATQBrXpFkaWlZ24riInREscpF4HvmJx0KiIFJG7IXABHvIT9ahyO2JGvloRsFgpT9GsLxSQUilo90yW1vbHsLoACeN7hJ0yLOEjhOqTACygN6dumlOECUkwQt7sgNEbn%25rBDS6jQ%25eT62Ydw6ZujlUptQ%25wc36PLifZu%25KXsnDHSc3uBr0CYJdKX324AIGTQBrXpFOnYlZ24riIgqYscpF4HvUmo0KiIFJG7kLABHvIT9a1gO2JGvloqDVgpT9GsLmdbUilo90yWEHbHsLoAC1fRhJ0yLOExylqTACygNWagmlOECUkyih7sgNEbn%25hL10UkNh5utTVAfke3x8NHC4wnoDyeLAEmrqIbgBj" alt="">
+                                </div>
+                                <div class="primalContent__elements--1row--1car--text">
+                                    <h2>Nuevo BMW iX</h2>
+                                    <h4>ELÉCTRICO</h4>
+                                    <h5>Desde 87.150€</h5>
+                                </div>
+                                <div class="primalContent__elements--1row--1car--button">
+                                    <button>Reservar</button>
+                                </div>
+                            </div>
+                            <div class="primalContent__elements--1row--2car">
+                                <div class="primalContent__elements--1row--1car--img">
+                                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kOHUtWPfbYfQJsd10tLhu1XzWVo7puMLWFmdkAj5DOPcQV%25Z8XgY1nTNIowJ4HO3zkyXq%25sGM8snGhMQSk%2508Xc9Vo74g37WNF1VgxNJ0%25ls2oub5imC2yRCzXeTt%25ViPRKVZVYVs4Wh1DMztIAzeqVYDafM3ajmztYRSDXz67aftxdYrfw1RSfWQthj%25VxdSeZ4EYuzWQdjcFs73aeZQ6KIoqXRjcZwBvL4rx6Kc%252Gyn4WwBKupUIaFe%252B3ibMUIjup2XH5qMv63iprJqYSGwXHi4TnYu9%25rJHFl5Ifou4TJIs8vWL3FlTv0P6PyXIslGAtnUCrv0s9OfQ6E4GA0ogSZhNF9OALUdcnkIogOybQCunvLUgChZq15GybUEqcmO89ChbNmKwYPoEqhk7BDDMLNmqn12cjDyk7m5VnJbYCn178zBGPtE5V1Pa29yfN8zVMRpoMSkPazDxTY7dnMRaYWl2OQ5DxRtesCZZ8YWxfjtzzcPteWS6fgoKMfjedwSkYBDS6jQ%25gEk2Ydw6ZuUNCptQ%25wc3bpjifZu%25KXsnDHSc3uBr0FvJdKX324AIxTQBrXpFOnNlZ24riIg6gscpF4Hv5tX0KiIFJGbhTABHvIT9hqxO2JGvloMjegpT9GsLx0bUilo90yYw0bHsLoACR1%25hJ0yLOEozjqTACygNSd4mlOECUkeE87sYEx%25anCpLXjNYPox9syh3b4gAcW" alt="">
+                                </div>
+                                <div class="primalContent__elements--1row--1car--text">
+                                    <h2>BMW X5</h2>
+                                    <h4>GASOLINA - DIÉSEL</h4>
+                                    <h5>Desde 74.700€</h5>
+                                </div>
+                                <div class="primalContent__elements--1row--1car--button">
+                                    <button>Reservar</button>
+                                </div>
+                            </div>
+                            <div class="primalContent__elements--1row--3car">
+                                <div class="primalContent__elements--1row--1car--img">
+                                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kOHUtWPfbYf6JZg10tLhu1XzWVo7puMLWFmdkAj5DOP5tpFZ8XgY1nTNIowJ4HO3zkyXq%25sGM8snGhMQSk%2508Xc9Vo74gtZLNF1VgxNJ0%25ls2oub5imC2yRCzXeTt%25ViPRKVZVYXw9Wh1DMztr9JeqVYDaf4RLjmztYRSG3O67aftxd9WMw1RSfWQoeu%25VxdSeZLdYuzWQdjcyUR3aeZQ6KChrXRjcZwBETSrx6Kc%252Nl74WwBKupksaFe%252B3iKovIjup2XHBpxv63iprJ2TWGwXHi4TCze9%25rJHFlERLou4TJIsFfpL3FlTv0ISUyXIslGAvdCCrv0s9OGJJE4GA0og9QNNF9OALUxWpkIogOybWu0nvLUgChe2B5GybUEqjpI89ChbNm6iCPoEqhk7ZSLMLNmqn1cI9Dyk7m5VpQ%25YCn178zieptE5V1PaH2kfN8zVMRJpuSkPazDxTA6dnMRaYWz2YQ5DxRteapDZ8YWxfjRiscPteWS6xHeKMfjedwWJOBDS6jQ%25e5W2Ydw6Zuj8KptQ%25wc3lscifZu%25KXs0BHSc3uBr0AtJdKX324AOQTQBrXpFOgVlZ24riIgkSscpF4HvUnO0KiIFJGbdkABHvIT9hMdO2JGvloqVdgpT9GsLmzbUilo90yWc0bHsLoACRN4hJPLzj1EoKG%25xyPnvzIJ9gwO30lda" alt="">
+                                </div>
+                                <div class="primalContent__elements--1row--1car--text">
+                                    <h2>Nuevo BMW i4 M50</h2>
+                                    <h4>ELÉCTRICO</h4>
+                                    <h5>Desde 76.500€</h5>
+                                </div>
+                                <div class="primalContent__elements--1row--1car--button">
+                                    <button>Reservar</button>
+                                </div>
+                            </div>
+                            <div class="primalContent__elements--1row--4car">
+                                <div class="primalContent__elements--1row--1car--img">
+                                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kOHUtWPfbYf6JDc10tLhu1XzWVo7puMLWFmdkAj5DOPMtEmZ8XgY1nTNIowJ4HO3zkyXq%25sGM8snGhMQSk%2508Xc9Vo74giUnNF1VgxNJ0%25ls2oub5imC2yRCzXeTt%25ViPRKVZVYV9aWh1DMztIVReqVYDafaiojmztYRSJwL67aftxdTC1w1RSfWQlER%25VxdSeZG4NuzWQdjc9NO3aeZQ6KownXRjcZwBL6drx6Kc%252y184WwBKupCVRFe%252B3inXZIjup2XH5rzv63iprJ849GwXHi4TPHB9%25rJHFlMJOou4TJIsDRXL3FlTv0YWUyXIslGAteECrv0s9Ofm6E4GA0ogS73NF9OALUdMRkIogOybQk0nvLUgChZSR5GybUEqgYP89ChbNmUhIPoEqhk7bXHMLNmqn1hdnDyk7m5VqQkYCn178zmZ1tE5V1Pa7oDfN8zVMRcsmSkPazDxK9QdnMRaYWB2YQ5DxRte2pAZ8YWxfjpICcPteWS6i9vKMfjedwHsNBDS6jQ%25J0p2Ydw6ZuQTPptQ%25wc3ZmeifZu%25KXcmHHSc3uBrKMQJdo3Om04uMwVbXov6Ojd%25p12aKZng" alt="">
+                                </div>
+                                <div class="primalContent__elements--1row--1car--text">
+                                    <h2>Nuevo BMW X4</h2>
+                                    <h4>GASOLINA - DIÉSEL</h4>
+                                    <h5>Desde 58.400€</h5>
+                                </div>
+                                <div class="primalContent__elements--1row--1car--button">
+                                    <button>Reservar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">COCHES 2</div>
+                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">COCHES 3</div>
+                <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">COCHES 4</div>
+            </div>
         </div>
 
-        <div class="primalContent__elements">
-            <div class="primalContent__elements--1row">
-                <div class="primalContent__elements--1row--1car">
-                    <div class="primalContent__elements--1row--1car--img">
-                        <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kOHUtWPfbYfXGPb10tLhu1XzWVo7puMLWFmdkAj5DOP7tFkZ8XgY1nTNIowJ4HO3zkyXq%25sGM8snpq6v6ODubLz2aKqfksQjmB2fJj5DOPMEagd%25kcWExHWpbl8FO2k3Hy2o242yATQBrXpFkaWlZ24riInREscpF4HvmJx0KiIFJG7IXABHvIT9ahyO2JGvloRsFgpT9GsLxSQUilo90yW1vbHsLoACeN7hJ0yLOEjhOqTACygN6dumlOECUkwQt7sgNEbn%25rBDS6jQ%25eT62Ydw6ZujlUptQ%25wc36PLifZu%25KXsnDHSc3uBr0CYJdKX324AIGTQBrXpFOnYlZ24riIgqYscpF4HvUmo0KiIFJG7kLABHvIT9a1gO2JGvloqDVgpT9GsLmdbUilo90yWEHbHsLoAC1fRhJ0yLOExylqTACygNWagmlOECUkyih7sgNEbn%25hL10UkNh5utTVAfke3x8NHC4wnoDyeLAEmrqIbgBj" alt="">
-                    </div>
-                    <div class="primalContent__elements--1row--1car--text">
-                        <h2>Nuevo BMW iX</h2>
-                        <h4>ELÉCTRICO</h4>
-                        <h5>Desde 87.150€</h5>
-                    </div>
-                    <div class="primalContent__elements--1row--1car--button">
-                        <button>Reservar</button>
-                    </div>
-                </div>
-                <div class="primalContent__elements--1row--2car">
-                    <div class="primalContent__elements--1row--1car--img">
-                        <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kOHUtWPfbYfQJsd10tLhu1XzWVo7puMLWFmdkAj5DOPcQV%25Z8XgY1nTNIowJ4HO3zkyXq%25sGM8snGhMQSk%2508Xc9Vo74g37WNF1VgxNJ0%25ls2oub5imC2yRCzXeTt%25ViPRKVZVYVs4Wh1DMztIAzeqVYDafM3ajmztYRSDXz67aftxdYrfw1RSfWQthj%25VxdSeZ4EYuzWQdjcFs73aeZQ6KIoqXRjcZwBvL4rx6Kc%252Gyn4WwBKupUIaFe%252B3ibMUIjup2XH5qMv63iprJqYSGwXHi4TnYu9%25rJHFl5Ifou4TJIs8vWL3FlTv0P6PyXIslGAtnUCrv0s9OfQ6E4GA0ogSZhNF9OALUdcnkIogOybQCunvLUgChZq15GybUEqcmO89ChbNmKwYPoEqhk7BDDMLNmqn12cjDyk7m5VnJbYCn178zBGPtE5V1Pa29yfN8zVMRpoMSkPazDxTY7dnMRaYWl2OQ5DxRtesCZZ8YWxfjtzzcPteWS6fgoKMfjedwSkYBDS6jQ%25gEk2Ydw6ZuUNCptQ%25wc3bpjifZu%25KXsnDHSc3uBr0FvJdKX324AIxTQBrXpFOnNlZ24riIg6gscpF4Hv5tX0KiIFJGbhTABHvIT9hqxO2JGvloMjegpT9GsLx0bUilo90yYw0bHsLoACR1%25hJ0yLOEozjqTACygNSd4mlOECUkeE87sYEx%25anCpLXjNYPox9syh3b4gAcW" alt="">
-                    </div>
-                    <div class="primalContent__elements--1row--1car--text">
-                        <h2>BMW X5</h2>
-                        <h4>GASOLINA - DIÉSEL</h4>
-                        <h5>Desde 74.700€</h5>
-                    </div>
-                    <div class="primalContent__elements--1row--1car--button">
-                        <button>Reservar</button>
-                    </div>
-                </div>
-                <div class="primalContent__elements--1row--3car">
-                    <div class="primalContent__elements--1row--1car--img">
-                        <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kOHUtWPfbYf6JZg10tLhu1XzWVo7puMLWFmdkAj5DOP5tpFZ8XgY1nTNIowJ4HO3zkyXq%25sGM8snGhMQSk%2508Xc9Vo74gtZLNF1VgxNJ0%25ls2oub5imC2yRCzXeTt%25ViPRKVZVYXw9Wh1DMztr9JeqVYDaf4RLjmztYRSG3O67aftxd9WMw1RSfWQoeu%25VxdSeZLdYuzWQdjcyUR3aeZQ6KChrXRjcZwBETSrx6Kc%252Nl74WwBKupksaFe%252B3iKovIjup2XHBpxv63iprJ2TWGwXHi4TCze9%25rJHFlERLou4TJIsFfpL3FlTv0ISUyXIslGAvdCCrv0s9OGJJE4GA0og9QNNF9OALUxWpkIogOybWu0nvLUgChe2B5GybUEqjpI89ChbNm6iCPoEqhk7ZSLMLNmqn1cI9Dyk7m5VpQ%25YCn178zieptE5V1PaH2kfN8zVMRJpuSkPazDxTA6dnMRaYWz2YQ5DxRteapDZ8YWxfjRiscPteWS6xHeKMfjedwWJOBDS6jQ%25e5W2Ydw6Zuj8KptQ%25wc3lscifZu%25KXs0BHSc3uBr0AtJdKX324AOQTQBrXpFOgVlZ24riIgkSscpF4HvUnO0KiIFJGbdkABHvIT9hMdO2JGvloqVdgpT9GsLmzbUilo90yWc0bHsLoACRN4hJPLzj1EoKG%25xyPnvzIJ9gwO30lda" alt="">
-                    </div>
-                    <div class="primalContent__elements--1row--1car--text">
-                        <h2>Nuevo BMW i4 M50</h2>
-                        <h4>ELÉCTRICO</h4>
-                        <h5>Desde 76.500€</h5>
-                    </div>
-                    <div class="primalContent__elements--1row--1car--button">
-                        <button>Reservar</button>
-                    </div>
-                </div>
-                <div class="primalContent__elements--1row--4car">
-                    <div class="primalContent__elements--1row--1car--img">
-                        <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kOHUtWPfbYf6JDc10tLhu1XzWVo7puMLWFmdkAj5DOPMtEmZ8XgY1nTNIowJ4HO3zkyXq%25sGM8snGhMQSk%2508Xc9Vo74giUnNF1VgxNJ0%25ls2oub5imC2yRCzXeTt%25ViPRKVZVYV9aWh1DMztIVReqVYDafaiojmztYRSJwL67aftxdTC1w1RSfWQlER%25VxdSeZG4NuzWQdjc9NO3aeZQ6KownXRjcZwBL6drx6Kc%252y184WwBKupCVRFe%252B3inXZIjup2XH5rzv63iprJ849GwXHi4TPHB9%25rJHFlMJOou4TJIsDRXL3FlTv0YWUyXIslGAteECrv0s9Ofm6E4GA0ogS73NF9OALUdMRkIogOybQk0nvLUgChZSR5GybUEqgYP89ChbNmUhIPoEqhk7bXHMLNmqn1hdnDyk7m5VqQkYCn178zmZ1tE5V1Pa7oDfN8zVMRcsmSkPazDxK9QdnMRaYWB2YQ5DxRte2pAZ8YWxfjpICcPteWS6i9vKMfjedwHsNBDS6jQ%25J0p2Ydw6ZuQTPptQ%25wc3ZmeifZu%25KXcmHHSc3uBrKMQJdo3Om04uMwVbXov6Ojd%25p12aKZng" alt="">
-                    </div>
-                    <div class="primalContent__elements--1row--1car--text">
-                        <h2>Nuevo BMW X4</h2>
-                        <h4>GASOLINA - DIÉSEL</h4>
-                        <h5>Desde 58.400€</h5>
-                    </div>
-                    <div class="primalContent__elements--1row--1car--button">
-                        <button>Reservar</button>
-                    </div>
-                </div>
+    <div class="primalContent__elements--news">
+        <div class="primalContent__elements--news--card1">
+            <div class="primalContent__elements--news--card--img">
+                <img src="https://www.bmw.es/content/dam/bmw/common/home/teaser/bmw-m-series-m2-lci-hometeaser-desktop.jpg/jcr:content/renditions/cq5dam.resized.img.1680.large.time1665399247503.jpg" alt="" style="height: 250px; width: 550px;">
             </div>
+            <div class="primalContent__elements--news--card---h1">
+                <h1>Nuevo BMW M2 Coupé</h1>
+            </div>
+        </div>
+        <div class="primalContent__elements--news--card1">
+            <div class="primalContent__elements--news--card--img">
+                <img src="https://www.bmw.es/content/dam/bmw/marketES/bmw_es/PublicPools/Teaser-Pool/Large-Teasers/Stock_locator_large-1680X756.jpeg/jcr:content/renditions/cq5dam.resized.img.1680.large.time1633612565445.jpeg" alt="" style="height: 250px; width: 550px;">
+            </div>
+            <div class="primalContent__elements--news--card---h1">
+                <h1>Catálogo BMW</h1>
+            </div>
+        </div>
+        <div class="primalContent__elements--news--card1">
+            <div class="primalContent__elements--news--card--img">
+                <img src="https://www.bmw.es/content/dam/bmw/marketES/bmw_es/Campanas/BMW30CSL/bmw-3.0-desktop.jpg/jcr:content/renditions/cq5dam.resized.img.1680.large.time1669132485336.jpg" alt="" style="height: 250px; width: 550px;">
+            </div>
+            <div class="primalContent__elements--news--card---h1">
+                <h1>NUEVO BMW 3.0 CSL</h1>
+            </div>           
         </div>
     </div>
 
 
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>

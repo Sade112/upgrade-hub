@@ -6,6 +6,8 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
+
 header{
     background-image: url(https://r4.wallpaperflare.com/wallpaper/456/792/25/the-sun-light-the-city-bmw-wallpaper-8079cec3ebf1ed3a607077de68e45b8d.jpg);
     background-repeat: no-repeat;
@@ -16,7 +18,10 @@ header{
     margin-right: 80px;
 }
 
-
+img{
+    width: 100%;
+    height: auto;
+}
 
 nav{
     display: flex;
@@ -126,7 +131,8 @@ button{
 }
 .primalContent__elements--news--card1{
     display: flex;
-    
+    border-style: solid;
+    border-color: white;
 }
 .primalContent__elements--news--card--img{
 
@@ -142,4 +148,31 @@ button{
     position: absolute;
     margin-top: 9.5%;
     margin-left: 2%;
+}
+
+/* FOOTER DE LA WEB */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.footer_copy{
+    display: flex;
+    align-items: center;
+    color: crimson;
+}
+
+.footer_links{
+    display: flex;
+    justify-content: flex-end;
+}
+.footer_links_ul{
+    display: flex;
+}
+.footer_links_ul > li{
+    display: flex;
+    align-items: center;
+    padding: 10px;
 }

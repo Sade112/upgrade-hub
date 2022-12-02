@@ -82,20 +82,20 @@ const elBoss = {
                 sigueElReto3: {
                 pareceQueSabesBucearEntreObjetos: {
                     definitivamenteSabes: [
-                    "Jose",
-                    "Luis,",
-                    "te",
-                    "miro",
-                    "y",
-                    23121,
-                    "te",
-                    "destruyo",
-                    {
-                        mensajeFinal:
-                        "Enhorabuena!, si has llegado hasta aquí te costará mucho menos tratar los datos de la pokeapi en el proyecto final de JavaScript!",
+                        "Jose",
+                        "Luis,",
+                        "te",
+                        "miro",
+                        "y",
+                        23121,
+                        "te",
+                        "destruyo",
+                            {
+                                mensajeFinal:
+                                "Enhorabuena!, si has llegado hasta aquí te costará mucho menos tratar los datos de la pokeapi en el proyecto final de JavaScript!",
+                            },
+                        ],
                     },
-                    ],
-                },
                 },
             },
             },
@@ -124,26 +124,40 @@ let jefe = [];
 
   // entonces: // le vamos a decir = console.log()
   // 1: le vamos a decir "{su nombre}, te conozco y no me das ningún miedo!";
-
+    console.log(elBoss.nombre + ", te conozco y no me das nungún miedo!");
   // 2: le vamos a decir "conozco tus poderes y lo que hacen!"
-
+    console.log("conozco tus poderes y lo que hacen!");
   // 3: le vamos a decir "tu primer poder es {su primer poder} y hace {la descripción de su poder}"
+    console.log("tu primer poder es " + elBoss.poderes[0].nombre + " y hace " + elBoss.poderes[0].description);
   //"tu segundo poder es {su segundo poder} y hace {la descripción de su poder}"
+    console.log("tu segundo poder es " + elBoss.poderes[1].nombre + " y hace " + elBoss.poderes[1].description);
   //"tu tercero poder es {su tercero poder} y hace {la descripción de su poder}"
-
+    console.log("tu tercer poder es " + elBoss.poderes[2].nombre + " y hace " + elBoss.poderes[2].description);
 
   // 4: le vamos a decir "También se tu punto más debil, tus familiares, y les conozco..."
-
+    console.log("También se tu punto más debil, tus familiares, y les conozco...");
 
 
   // "conozco a tu {parentesco del primer familiar} {nombre del primer familiar}"
+    console.log("conozco a tu " + elBoss.familiares[0].parentesco + " " + elBoss.familiares[0].nombre);
   // "conozco a tu {parentesco del segundo familiar} {nombre del segundo familiar}"
+    console.log("conozco a tu " + elBoss.familiares[1].parentesco + " " + elBoss.familiares[1].nombre);
   // "conozco a tu {parentesco del tercero familiar} {nombre del tercero familiar}"
+    console.log("conozco a tu " + elBoss.familiares[2].parentesco + " " + elBoss.familiares[2].nombre);
+
   // "y conozco a tu {parentesco del cuarto familiar} {nombre del cuarto familiar}"
+    console.log("y conozco a tu " + elBoss.familiares[3].parentesco + " " + elBoss.familiares[3].nombre);
+
 
   // 5: para matarlo tendrás que superar el reto y para ello tendrás que decirle las palabras
   // mágicas para que el mensaje quede tal que así "Jose luis, te miro y te destruyo".
-
+    console.log(elBoss.reto[0][0].sigueElReto[0].sigueElReto2.sigueElReto3.pareceQueSabesBucearEntreObjetos.definitivamenteSabes[0] 
+        + " " +elBoss.reto[0][0].sigueElReto[0].sigueElReto2.sigueElReto3.pareceQueSabesBucearEntreObjetos.definitivamenteSabes[1]
+        + " " +elBoss.reto[0][0].sigueElReto[0].sigueElReto2.sigueElReto3.pareceQueSabesBucearEntreObjetos.definitivamenteSabes[2]
+        + " " +elBoss.reto[0][0].sigueElReto[0].sigueElReto2.sigueElReto3.pareceQueSabesBucearEntreObjetos.definitivamenteSabes[3]
+        + " " +elBoss.reto[0][0].sigueElReto[0].sigueElReto2.sigueElReto3.pareceQueSabesBucearEntreObjetos.definitivamenteSabes[4] 
+        + " " +elBoss.reto[0][0].sigueElReto[0].sigueElReto2.sigueElReto3.pareceQueSabesBucearEntreObjetos.definitivamenteSabes[6]
+        + " " +elBoss.reto[0][0].sigueElReto[0].sigueElReto2.sigueElReto3.pareceQueSabesBucearEntreObjetos.definitivamenteSabes[7]);
 
 
     // console.log(elBoss.reto[step]);
